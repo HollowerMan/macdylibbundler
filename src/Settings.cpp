@@ -39,7 +39,7 @@ void bundleLibs(bool on){ bundleLibs_bool = on; }
 
 
 std::string dest_folder_str = "./libs/";
-std::string destFolder(){ return dest_folder_str; }
+std::string destFolder(){ return "\"" + dest_folder_str + "\""; }
 void destFolder(std::string path)
 {
     dest_folder_str = path;
